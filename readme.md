@@ -10,7 +10,7 @@ step 4, evaluate the result to float
 T1 = T_Rotate('pi/6 + pi/2', useRad=True)
 fOut.write(latexExpression('T1'))
 ```
-will write a markdown file which can be rendered as
+will write a markdown file which can be rendered as (no, you can not read it on github easily, please use a good markdown editor)
 $$
 \begin{align}
 T1 &= \left[\begin{array}{r}\cos{\left (\theta_{0} \right )} & - \sin{\left (\theta_{0} \right )} & 0\\\sin{\left (\theta_{0} \right )} & \cos{\left (\theta_{0} \right )} & 0\\0 & 0 & 1\end{array}\right]\\
