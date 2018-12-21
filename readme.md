@@ -1,9 +1,14 @@
 # What?
 a function to express the 4 steps of math calculation in markdown format:
+
 step 1, list the formula
+
 step 2, replace the variants with specified values
+
 step 3, simplify the result of step 2
+
 step 4, evaluate the result to float
+
 
 # How?
 ```python
@@ -30,8 +35,19 @@ You can define your own functions in class. There are 2 in this release: `T_Rota
 You can use this function freely only if you mention that "Free expand_expression.py by Li Jun is used. Which can be download from https://github.com/retsyo/expand_expression"
 
 # Bug?
-1. please note the parameters are passed as a string not number/expression/sympy's expression
-2. if you find more bugs please report/fix it
+1. if you met so-said bug, please note the parameters must be passed as a string not number/expression/sympy's expression
+2. the order of items in expression maybe changed, for example
+```
+T_LOG('sin(pi/3) * 2 + 1')
+```
+will be rendered as
+```
+log(1+2*sin(pi/3))
+```
+but this is not a bug and I don't know how to fix it
+
+3. if you find more bugs please report/fix it
+
 
 
 
